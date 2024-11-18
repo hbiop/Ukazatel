@@ -1,0 +1,28 @@
+﻿<Window x:Class="Ukazatel.OknoPoiskUkazatelia"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ukazatel"
+        mc:Ignorable="d"
+        Title="OknoPoiskUkazatelia" Height="200" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Grid.Row="0" Content="Назад" Click="BtnNazad"/>
+        <TextBox x:Name="tbVvodSlova" Grid.Row="2" Grid.Column="0" Text=""/>
+        <TextBox x:Name="tbVividStranic" IsEnabled="False" Grid.Row="2" Grid.Column="2" Text=""/>
+        <Label Content="Введите слово" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+        <Label Content="Номера страниц" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="2"/>
+        <Button Grid.Column="1" Grid.Row="3" Content="Найти" Click="BtnNayti"/>
+    </Grid>
+</Window>
